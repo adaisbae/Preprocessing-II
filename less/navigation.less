@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+.nav-cont{
+    .center(space-between, center);
+    border-bottom: @bottom-border;
+    margin-top: @top-margin;
+    padding-bottom: @bottom-padding;
+    @media @mobile {
+        .column();
+    }
+
+    h1 {
+        max-width: 50%;
+        @media @mobile {
+            max-width: 100%;
+            margin: 15px;
+        }
+    }
+
+    nav {
+        max-width: 50%;
+        @media @mobile {
+            max-width: 100%;
+        }
+    } 
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: 40px;
+        color: @shark;
+        @media @mobile {
+            padding-right: 30px;
+        }
+    }
+}
