@@ -5,13 +5,23 @@
     border-bottom: @bottom-border;
     margin-top: @top-margin;
     padding-bottom: @bottom-padding;
+    @media @mobile {
+        .column();
+    }
 
     h1 {
         max-width: 50%;
+        @media @mobile {
+            max-width: 100%;
+            margin: 15px;
+        }
     }
 
     nav {
         max-width: 50%;
+        @media @mobile {
+            max-width: 100%;
+        }
     } 
 
     a {
@@ -19,22 +29,8 @@
         text-decoration: none;
         margin-left: 40px;
         color: @shark;
+        @media @mobile {
+            padding-right: 30px;
+        }
     }
 }
-
-.head-cont {
-    border-bottom: @bottom-border;
-
-    img{
-        padding-bottom: @bottom-padding;
-    }
-
-    h1 {
-        padding-bottom: .5em;
-    }
-
-    p{
-        padding-bottom: @bottom-padding;
-    }
-}
-
