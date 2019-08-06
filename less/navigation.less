@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;   
+
+    @media @mobile{
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    @media @mobile{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: @font-color;
+}
+
+hr{
+    border-style: dashed;
+    border-width: 2px;
+    color: @navigation-border;
+    margin: 0;
+}
